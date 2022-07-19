@@ -1,13 +1,52 @@
-#container {
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+#content, #container, #cadastro {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 60vh;
+    height: 70vh;
 }
 
 button {
     width: 6rem;
     height: 2.5rem;
     margin: 2rem;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+}
+
+#palavra-secreta {
+	font-size: 2em;
+}
+
+img {
+	border: none;
+}
+
+#tentar {
+	border: transparent;
+	background-color: #c39b8d;
+	color: white;
+	border-radius: 0.1rem;
+	cursor: pointer;
+	font-family: 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+}
+
+#cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#input {
+    width: 8rem;
+    height: 2rem;
 }

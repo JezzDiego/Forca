@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Forca</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Forca</title>
 </head>
+
 <body>
-    <div id="container">
+	<div id="container">
+		<div id="cadastro">
+			<input id="input" placeholder="Cadastre sua palavra">
+			<button id="cadastrar" onclick="cadastrar()">Cadastrar</button>
+      <p id="msg"></p>
+		</div>
+ 
 
-    <div>
-    <img id="img" src="./sprites/sprites(1).png">
-    </div>
+		<div id="content">
+			<div>
+				<img id="img" src="./sprites/sprites(1).png">
+			</div>
 
-    <p id="forca"></p>
-    <p id="palavra-secreta"></p>
-    <p id="letras-tentadas"></p>
-    Tentativa: <input id="tentativa"/>
-    <button id="tentar" onclick="verifyAttempt()">Enviar</button>
-    <div id="mensagem"></div>
+			<p id="forca"></p>
+			<p id="palavra-secreta"></p>
+			<p id="letras-tentadas"></p>
+			<label>TENTATIVA</label> <input id="tentativa" />
+			<button id="tentar" onclick="verifyAttempt()">ENVIAR</button>
+			<div id="mensagem"></div>
 
-    </div>
-    <script src="app.js"></script>
+		</div>
+
+	</div>
+	<script src="app.js"></script>
 </body>
+
 </html>
